@@ -16,17 +16,29 @@
 /* end story section div styles */
 
 /* start typeface styles */
-#shell960 p {
-	
+#introText {
+	font-size: 1.4em;
+	line-height: 1.5;
+	border-left: 2px solid #F05106;
+	padding-left: 1em;
 }
 
-#shell960 h3 {
-	
+#shell960 h3 {	
 	font-size: 36px;
 	font-family: 'Bitter', serif;
 	margin: .5em 0em;
 }
+
 /* end typeface styles */
+
+/* start caption styles */
+.captionSmall {
+	font-family: 'Bitter', serif;
+	font-size: 12px;
+	font-style:italic;
+	color:#878787;
+}
+/* end caption styles */
 
 /* start full-width image styles */	
 #shell960 img.width960 {	
