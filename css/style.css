@@ -8,18 +8,26 @@
 /* end main container styles */
 
 /* start story section div styles */
+
+/* Comment this out if you want a single-column, centered layout
 #shell960 div.right, div.left, div.full {
 	width: 630px;
 	margin: 0 auto;
 	margin-bottom: 2.5em;
+} 
+*/
+
+#shell960 div.full {
+	width: 960px;
+	margin: 0 auto;
 }
+
 /* end story section div styles */
 
 /* start typeface styles */
 #introText {
 	font-size: 1.4em;
 	line-height: 1.5;
-	border-left: 2px solid #F05106;
 	padding-left: 1em;
 }
 
@@ -27,6 +35,14 @@
 	font-size: 36px;
 	font-family: 'Bitter', serif;
 	margin: .5em 0em;
+}
+
+#shell960 p {
+	width: 100%;
+	max-width: 630px;
+	margin: 0 auto;
+	padding-bottom: 1.5em;
+
 }
 
 /* end typeface styles */
@@ -43,6 +59,12 @@
 /* start full-width image styles */	
 #shell960 img.width960 {	
 	margin:10px 20px 10px -165px;
+}
+
+#shell960 .fullCentered {
+	margin: 0 auto;
+	width: 100%;
+	max-width:960px;
 }
 /* end full-width image styles */	
 	
