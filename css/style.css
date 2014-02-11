@@ -142,7 +142,7 @@ span.dropCap {
 	right: 0em;
 }
 
-#snake {
+#johnny {
 	top: 0;
 	left: 0em;
 }
@@ -157,8 +157,13 @@ span.dropCap {
 	font-style:italic;
 	color:#81929B;
 	margin: 0 auto;
-	text-align:	center; 
+	text-align:	right; 
 	line-height: 1.5;
+	float: left;
+	position: relative;
+	width: 100%;
+	max-width: 150px;
+	padding-right: 1em;
 }
 
 /* end caption styles */
@@ -171,7 +176,7 @@ span.dropCap {
 #shell960 .fullCentered {
 	margin: 0 auto;
 	width: 100%;
-	max-width:960px;
+	max-width:630px;
 }
 
 #shell960 img.splitScreen {
