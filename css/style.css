@@ -95,6 +95,10 @@ div.node-master-image {display: none;}
 
 /* start overlay styles */
 
+.pullQuoteOverlay {
+    position: relative;
+}
+
 .backImage {
 	opacity:0;
 	position: relative;
@@ -111,27 +115,27 @@ div.node-master-image {display: none;}
 }
 
 #marianna {
-	top: 54.8em; 
+	top: 0;
 	left: 0em;
 }
 
 #spell {
-	top: 175em;
+	top: 0;
 	right: 0em;
 }
 
 #abused {
-	top: 259em;
+	top: 0;
 	left: 0em;
 }
 
 #belt {
-	top: 329em;
+	top: 0;
 	right: 0em;
 }
 
 #snake {
-	top: 385em;
+	top: 0;
 	left: 0em;
 }
 
