@@ -81,7 +81,7 @@ div.node-master-image {display: none;}
 	width: 100%;
 	max-width: 630px;
 	margin: 0 auto;
-	padding: 1em;
+	padding: 1em 0 1em 0;
 	line-height: 2em;
 }
 
