@@ -282,7 +282,7 @@ span.smallCaps {
 /* end table styles */
 
 @media only screen 
-and (max-width: 480px) {
+and (max-width: 568px) {
 	
 	div#shell960 {
 	    font-size:1em;
@@ -323,6 +323,19 @@ and (max-width: 480px) {
 	
 	#shell960 div.full img.width960 {	
 		margin:0 auto;
+	}
+
+	.overlayText {
+		position: relative;
+		background: #000000;
+		color: white;
+		padding: .5em;
+		width: 96%;
+	}
+
+	.captionSmall {
+		text-align:	left;
+		line-height: 1;
 	}
 	
 	#shell960 img.splitScreen {
