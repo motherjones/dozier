@@ -85,13 +85,21 @@ div.node-master-image {display: none;}
 	line-height: 2em;
 }
 
-.lead.drop-cap:first-letter {
+span.dropCap {
+	float:left;
+	font-size: 600%;
+	line-height: 70px;
+	margin-right: 2px;
+}
+
+/* .lead.drop-cap:first-letter {
   margin: 0 12px -10px 1;
   font-size: 550%;
   line-height: 100%;
-}
+} */
 
-/* start article styles */
+
+/* end paragraph styles */
 
 /* start overlay styles */
 
