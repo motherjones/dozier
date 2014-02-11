@@ -20,7 +20,7 @@
 } 
 */
 
-#shell960 div.full {
+#shell960 .full {
 	width: 100%;
 	max-width: 960px;
 	margin: 0 auto;
@@ -50,7 +50,7 @@
 	width: 100%;
 	max-width: 630px;
 	margin: 0 auto;
-	padding-bottom: 1.5em;
+	padding: 1em;
 
 }
 
@@ -84,13 +84,28 @@
 }
 
 #marianna {
-	top: 40em; 
-	left: 10.4em;
+	top: 51.8em; 
+	left: 0em;
 }
 
 #spell {
-	top: 144.3em;
-	left: 10.4em;
+	top: 171em;
+	right: 0em;
+}
+
+#abused {
+	top: 241em;
+	left: 0em;
+}
+
+#belt {
+	top: 309em;
+	right: 0em;
+}
+
+#snake {
+	top: 360em;
+	left: 0em;
 }
 
 /* end overlay styles */
@@ -101,8 +116,10 @@
 	font-family: 'Bitter', serif;
 	font-size: 12px;
 	font-style:italic;
-	color:#878787;
+	color:#81929B;
 	margin: 0 auto;
+	text-align:	center; 
+	line-height: 1.5;
 }
 
 /* end caption styles */
