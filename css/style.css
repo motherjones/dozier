@@ -4,7 +4,6 @@
 	font-family: Raleway;
     font-size:1.1em;
 	background-color: #fff;
-	line-height:1.5em;
 	color: #1a1a1a;
 }
 /* end main container styles */
@@ -51,15 +50,11 @@
 	max-width: 630px;
 	margin: 0 auto;
 	padding: 1em;
-
+	line-height: 2em;
 }
 
-.lead {
-  font-size: 19px;
-  line-height: 33px;
-}
 .lead.drop-cap:first-letter {
-  margin: 0 12px -10px 0;
+  margin: 0 12px -10px 1;
   font-size: 550%;
   line-height: 100%;
 }
