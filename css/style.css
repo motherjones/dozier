@@ -1,9 +1,11 @@
 /* start main container styles */
 #shell960 {
 	width: 100%;
-	font-family: verdana;
-    font-size:1.2em;
+	font-family: Raleway;
+    font-size:1.1em;
 	background-color: #fff;
+	line-height:1.5em;
+	color: #1a1a1a;
 }
 /* end main container styles */
 
@@ -27,10 +29,6 @@
 /* end story section div styles */
 
 /* start typeface styles */
-#introText {
-	font-size: 1.4em;
-	line-height: 1.5;
-}
 
 #shell960 h3 {	
 	font-size: 36px;
@@ -38,7 +36,16 @@
 	margin: .5em 0em;
 }
 
-#shell960 p {
+#shell960 a {
+	color: #cccccc;
+	text-decoration: none;
+}
+
+/* end typeface styles */
+
+/* start paragraph styles */
+
+#shell960 .singleColumnText {
 	width: 100%;
 	max-width: 630px;
 	margin: 0 auto;
@@ -46,7 +53,33 @@
 
 }
 
-/* end typeface styles */
+.lead {
+  font-size: 19px;
+  line-height: 33px;
+}
+.lead.drop-cap:first-letter {
+  margin: 0 12px -10px 0;
+  font-size: 550%;
+  line-height: 100%;
+}
+
+/* start article styles */
+
+/* start overlay styles */
+
+img.overlayImage {
+	position: relative;
+	width: 100%;
+}
+
+p.overlayText {
+   position: absolute; 
+   top: 63em; 
+   left: 11em; 
+}
+
+/* end overlay styles */
+
 
 /* start caption styles */
 .captionSmall {
@@ -54,10 +87,7 @@
 	font-size: 12px;
 	font-style:italic;
 	color:#878787;
-}
-
-.captionOverlay {
-
+	margin: 0 auto;
 }
 
 /* end caption styles */
