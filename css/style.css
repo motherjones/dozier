@@ -116,17 +116,12 @@ span.dropCap {
 .overlayText {
 	font-style: italic;
 	font-size: 1.5em;
-	background: #000000;
-	opacity: .5;
+	background: rgba(0, 0, 0, 0.5);
 	padding: 1em;
 	position: absolute; 
 	max-width: 320px;
 	width: 100%;
-}
-
-.overlayText p {
 	color: #ffffff;
-	opacity: 1;
 }
 
 #marianna {
@@ -357,18 +352,23 @@ and (max-width: 568px) {
 
 	.overlayText {
 		position: relative;
-		background: #000000;
-		color: white;
 		padding: .5em;
 		width: 96%;
+		font-size:.8em;
+		background: rgba(0, 0, 0, 1);
 	}
 
 	.captionSmall {
 		float: left;
 		text-align: left;
 		max-width: 568px;
+		margin-bottom: 1em;
 	}
 	
+	.captionWithAudio {
+		margin-bottom: 6em;
+	}
+
 	#shell960 img.splitScreen {
 		max-width: 220px;
 		width: 100%;
