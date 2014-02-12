@@ -17,7 +17,6 @@
 
 
 	<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Titilium' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Raleway:700,500,600' rel='stylesheet' type='text/css'>
 
 <script>
@@ -30,15 +29,16 @@
 	    $(window).scroll( function(){
 	    
 	        /* Check the location of each desired element */
-	        $('.backImage').each( function(i){
+	        $('.backImageFade', '.overlayQuote').each( function(i){
 	            
-	            var bottom_of_object = $(this).offset().top + ($(this).outerHeight()/2);
+	            var bottom_of_object = $(this).offset().top + ($(this).outerHeight()/1.5);
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            
 	            /* If the object is completely visible in the window, fade it it */
 	            if( bottom_of_window > bottom_of_object ){
 	                
 	                $(this).animate({'opacity':'1'},1400);
+	                $(this).animate({'color: #FFFFFF'},1000);
 	                    
 	            }
 	        }); 
@@ -81,7 +81,9 @@
 				<img alt="" class="backImageStatic" src="http://assets.motherjones.com/interactives/projects/2014/2/Dozier/RichardHuntly-LikeSlavery.jpg">
 				<div class="floatQuote" id="spell">
 					<p>“To go inside of it was like, I don’t know how to describe it. You’re under the spell of the Florida School for Boys.”</p>
-					<object height="18" width="100%"><param name="movie" value="https://player.soundcloud.com/player.swf?url=https%3A//api.soundcloud.com/tracks/133464953%3Fsecret_token%3Ds-IB7uy&amp;color=ff5500&amp;auto_play=false&amp;player_type=tiny"></param><param name="allowscriptaccess" value="always"></param><param name="wmode" value="transparent"></param><embed wmode="transparent" allowscriptaccess="always" height="18" width="100%" src="https://player.soundcloud.com/player.swf?url=https%3A//api.soundcloud.com/tracks/133464953%3Fsecret_token%3Ds-IB7uy&amp;color=ff5500&amp;auto_play=false&amp;player_type=tiny"></embed></object>
+					<div class="flashAudio">
+						<object height="18" width="100%"><param name="movie" value="https://player.soundcloud.com/player.swf?url=https%3A//api.soundcloud.com/tracks/133464953%3Fsecret_token%3Ds-IB7uy&amp;color=ff5500&amp;auto_play=false&amp;player_type=tiny"></param><param name="allowscriptaccess" value="always"></param><param name="wmode" value="transparent"></param><embed wmode="transparent" allowscriptaccess="always" height="18" width="100%" src="https://player.soundcloud.com/player.swf?url=https%3A//api.soundcloud.com/tracks/133464953%3Fsecret_token%3Ds-IB7uy&amp;color=ff5500&amp;auto_play=false&amp;player_type=tiny"></embed></object>
+					</div>
 				</div>
 			</section>
 			<article class="singleColumnText">
