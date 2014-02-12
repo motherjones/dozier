@@ -124,7 +124,6 @@ span.dropCap {
 .overlayText {
 	font-style: italic;
 	font-size: 1.4em;
-	background: rgba(0, 0, 0, 0.5);
 	padding: 1em;
 	position: absolute; 
 	max-width: 320px;
@@ -136,6 +135,7 @@ span.dropCap {
 #marianna {
 	bottom: 0;
 	left: 0em;
+	background: rgba(0, 0, 0, 0.5);
 }
 
 #spell {
@@ -390,7 +390,6 @@ and (max-width: 568px) {
 		padding: .5em;
 		width: 96%;
 		font-size:.8em;
-		background: rgba(0, 0, 0, 1);
 		line-height: .8em;
 	}
 
