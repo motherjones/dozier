@@ -38,15 +38,17 @@
 	            /* If the object is completely visible in the window, fade it it */
 	            if( bottom_of_window > bottom_of_object ) {
 	                
-                    var txt = $(this).find('p');
-                    if (!txt.attr('data-color-changing')) {
-                        console.log('coloring');
+                    var img = $(this).find('.backImageFade');
+                    if (img.length) {
+                        img.animate({'opacity':'1'},1400);	                    
+                    }
+
+                    var txt = $(this).find('.overlayQuote');
+                    if (txt.length && !txt.attr('data-color-changing')) {
                         txt.attr('data-color-changing', 'yes');
                         colorAnimate('color', '#ffffff', txt, 1400);
                     }
 
-                    var img = $(this).find('.backImageFade');
-	                img.animate({'opacity':'1'},1400);	                    
 	            }
 	        }); 
 	    });
@@ -88,14 +90,12 @@
     }
     colorAnimHelper = function(changes) {
         if (changes.steps < 1) {return};
-        console.log(changes);
         changes.steps--;
         changes.r = changes.r + changes.rstep;
         changes.g = changes.g + changes.rstep;
         changes.b = changes.b + changes.rstep;
         var colorstring = 'rgb(' + Math.floor(changes.r) + ', '
             + Math.floor(changes.g) + ', ' + Math.floor(changes.b) + ')'
-        console.log(colorstring);
         changes.elem.css(changes.attr, colorstring);
 
         setTimeout(function() {colorAnimHelper(changes)}, 10);
