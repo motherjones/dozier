@@ -176,6 +176,20 @@ span.dropCap {
 	border-top: 1px solid #ccc;
 }
 
+.captionNone {
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	font-style:italic;
+	color:#81929B;
+	margin-right: 2em;
+	text-align:	right; 
+	line-height: 1.5;
+	float: left;
+	position: relative;
+	width: 100%;
+	max-width: 140px;
+}
+
 /* end caption styles */
 
 /* start full-width image styles */	
@@ -187,6 +201,9 @@ span.dropCap {
 	margin: 0 auto;
 	width: 100%;
 	max-width:630px;
+	padding-bottom: 1.4em;
+
+
 }
 
 #shell960 img.splitScreen {
