@@ -33,7 +33,7 @@ div.node-master-image {display: none;}
 /* start main container styles */
 #shell960 {
 	width: 100%;
-	font-family: Raleway;
+	font-family: Georgia, serif;
     font-size:1.1em;
 	background-color: #fff;
 	color: #1a1a1a;
@@ -114,37 +114,49 @@ span.dropCap {
 }
 
 .overlayText {
-	background: #ffffff;
-	opacity: .9;
+	font-style: italic;
+	font-size: 1.5em;
+	background: #000000;
+	opacity: .5;
 	padding: 1em;
 	position: absolute; 
-	max-width: 630px;
+	max-width: 320px;
 	width: 100%;
 }
 
+.overlayText p {
+	color: #ffffff;
+	opacity: 1;
+}
+
 #marianna {
-	top: 0;
+	bottom: 0;
 	left: 0em;
 }
 
 #spell {
-	top: 0;
+	bottom: 0;
 	right: 0em;
+	max-width: 530px;
+
 }
 
 #abused {
 	top: 0;
 	left: 0em;
+	max-width: 730px;
 }
 
 #belt {
-	top: 0;
+	bottom: 0;
 	right: 0em;
+	max-width: 730px;
 }
 
 #johnny {
 	top: 0;
 	left: 0em;
+	max-width: 720px;
 }
 
 /* end overlay styles */
@@ -152,18 +164,18 @@ span.dropCap {
 
 /* start caption styles */
 .captionSmall {
-	font-family: 'Bitter', serif;
+	font-family: Verdana, sans-serif;
 	font-size: 12px;
 	font-style:italic;
 	color:#81929B;
-	margin: 0 auto;
+	margin-right: 2em;
 	text-align:	right; 
 	line-height: 1.5;
 	float: left;
 	position: relative;
 	width: 100%;
-	max-width: 150px;
-	padding-right: 1em;
+	max-width: 140px;
+	border-top: 1px solid #ccc;
 }
 
 /* end caption styles */
