@@ -30,6 +30,8 @@ div.node-master-image {display: none;}
 #node-bottom-block {text-align: center;}
 /* end full width template */
 
+#node-terms { display: none; };
+
 /* start main container styles */
 #shell960 {
 	width: 100%;
