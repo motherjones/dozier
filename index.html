@@ -30,20 +30,77 @@
 	    $(window).scroll( function(){
 	    
 	        /* Check the location of each desired element */
-	        $('.backImage').each( function(i){
+	        $('.pullQuoteOverlay').each( function(i){
 	            
 	            var bottom_of_object = $(this).offset().top + ($(this).outerHeight()/2);
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            
 	            /* If the object is completely visible in the window, fade it it */
-	            if( bottom_of_window > bottom_of_object ){
+	            if( bottom_of_window > bottom_of_object ) {
 	                
-	                $(this).animate({'opacity':'1'},1400);
+                    var txt = $(this).find('p');
+                    if (!txt.attr('data-color-changing')) {
+                        console.log('coloring');
+                        txt.attr('data-color-changing', 'yes');
+                        colorAnimate('color', '#ffffff', txt, 1400);
+                    }
+
+                    var img = $(this).find('.backImage');
+	                img.animate({'opacity':'1'},1400);
 	                    
 	            }
 	        }); 
 	    });
 	});
+    var colorAnimate = function(attr, color, elem, duration) {
+        oldcolor = elem.css(attr);
+        oldcolor = oldcolor.replace('rgb(', '').replace(')', '');
+        oca = oldcolor.split(',');
+        r = parseInt(oca[0]);
+        g = parseInt(oca[0]);
+        b = parseInt(oca[0]);
+        color = color.replace('#', '');
+        nr = parseInt(color.substring(0,2), 16);
+        ng = parseInt(color.substring(2,4), 16);
+        nb = parseInt(color.substring(4,6), 16);
+        rchange = nr - r;
+        gchange = ng - g;
+        bchange = nb - b;
+
+        steps = Math.floor(duration / 10);
+        rstep = rchange / steps;
+        gstep = gchange / steps;
+        bstep = bchange / steps;
+
+
+        var changes = {
+            elem: elem,
+            attr: attr,
+            r : r,
+            rstep : rstep,
+            g : g,
+            gstep : gstep,
+            b : b,
+            bstep : bstep,
+            steps : steps
+        }
+
+        colorAnimHelper(changes);
+    }
+    colorAnimHelper = function(changes) {
+        if (changes.steps < 1) {return};
+        console.log(changes);
+        changes.steps--;
+        changes.r = changes.r + changes.rstep;
+        changes.g = changes.g + changes.rstep;
+        changes.b = changes.b + changes.rstep;
+        var colorstring = 'rgb(' + Math.floor(changes.r) + ', '
+            + Math.floor(changes.g) + ', ' + Math.floor(changes.b) + ')'
+        console.log(colorstring);
+        changes.elem.css(changes.attr, colorstring);
+
+        setTimeout(function() {colorAnimHelper(changes)}, 10);
+    };
 </script>
 
 	
