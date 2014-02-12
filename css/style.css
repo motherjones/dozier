@@ -36,7 +36,7 @@ div.node-master-image {display: none;}
 #shell960 {
 	width: 100%;
 	font-family: Georgia, serif;
-    font-size:1.1em;
+    font-size:1.4em;
 	background-color: #fff;
 	color: #1a1a1a;
 }
@@ -117,13 +117,14 @@ span.dropCap {
 
 .overlayText {
 	font-style: italic;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	background: rgba(0, 0, 0, 0.5);
 	padding: 1em;
 	position: absolute; 
 	max-width: 320px;
 	width: 100%;
 	color: #ffffff;
+	line-height: 1.2em;
 }
 
 #marianna {
@@ -352,12 +353,17 @@ and (max-width: 568px) {
 		margin:0 auto;
 	}
 
+	#shell960 .singleColumnText {
+		padding: 1em 0 0 0;
+	}
+
 	.overlayText {
 		position: relative;
 		padding: .5em;
 		width: 96%;
 		font-size:.8em;
 		background: rgba(0, 0, 0, 1);
+		line-height: .8em;
 	}
 
 	.captionSmall {
