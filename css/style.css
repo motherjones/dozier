@@ -126,8 +126,6 @@ span.dropCap {
 	padding: 1em;
 	max-width: 530px;
 	width: 100%;
-	color: #ffffff;
-	color: #000000;
 	line-height: 1.2em;
 }
 
@@ -153,6 +151,7 @@ span.dropCap {
 	left: 0em;
 	max-width: 495px;
 	background: rgba(0, 0, 0, 0.2);
+	color: #ffffff;
 }
 
 #spell {
