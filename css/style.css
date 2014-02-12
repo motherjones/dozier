@@ -121,20 +121,28 @@ span.dropCap {
 	width: 100%;
 }
 
-.overlayText {
+.overlayQuote, .floatQuote {
 	font-style: italic;
 	font-size: 1.4em;
 	padding: 1em;
-	position: absolute; 
-	max-width: 320px;
+	max-width: 530px;
 	width: 100%;
 	color: #ffffff;
 	line-height: 1.2em;
 }
 
+.overlayQuote {
+	position: absolute; 
+}
+
+.floatQuote {
+	position: relative;
+}
+
 #marianna {
 	bottom: 0;
 	left: 0em;
+	max-width: 495px;
 	background: rgba(0, 0, 0, 0.5);
 }
 
