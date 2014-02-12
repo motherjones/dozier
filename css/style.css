@@ -109,27 +109,41 @@ span.dropCap {
     position: relative;
 }
 
-.backImage {
+.backImageFade {
 	opacity:0;
 	position: relative;
 	width: 100%;
 }
 
-.overlayText {
+.backImageStatic {
+	opacity:1;
+	position: relative;
+	width: 100%;
+}
+
+.overlayQuote, .floatQuote {
 	font-style: italic;
 	font-size: 1.4em;
-	background: rgba(0, 0, 0, 0.5);
 	padding: 1em;
-	position: absolute; 
-	max-width: 320px;
+	max-width: 530px;
 	width: 100%;
 	color: #ffffff;
 	line-height: 1.2em;
 }
 
+.overlayQuote {
+	position: absolute; 
+}
+
+.floatQuote {
+	position: relative;
+}
+
 #marianna {
 	bottom: 0;
 	left: 0em;
+	max-width: 495px;
+	background: rgba(0, 0, 0, 0.5);
 }
 
 #spell {
@@ -330,6 +344,10 @@ span.smallCaps {
 @media only screen 
 and (max-width: 568px) {
 	
+	span.desktopOnly {
+		display:none;
+	}
+
 	div#shell960 {
 	    font-size:1em;
 		width: 98%;
@@ -380,7 +398,6 @@ and (max-width: 568px) {
 		padding: .5em;
 		width: 96%;
 		font-size:.8em;
-		background: rgba(0, 0, 0, 1);
 		line-height: .8em;
 	}
 
