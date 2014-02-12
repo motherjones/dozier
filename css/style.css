@@ -109,8 +109,14 @@ span.dropCap {
     position: relative;
 }
 
-.backImage {
+.backImageFade {
 	opacity:0;
+	position: relative;
+	width: 100%;
+}
+
+.backImageStatic {
+	opacity:1;
 	position: relative;
 	width: 100%;
 }
@@ -330,6 +336,10 @@ span.smallCaps {
 @media only screen 
 and (max-width: 568px) {
 	
+	span.desktopOnly {
+		display:none;
+	}
+
 	div#shell960 {
 	    font-size:1em;
 		width: 98%;
