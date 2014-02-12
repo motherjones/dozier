@@ -252,8 +252,9 @@ span.dropCap {
 	text-align: center;
 	margin: 0 auto;
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
+	padding-bottom: 45%; /* 16:9 or 56.25%, sized down to 80% */
 	padding-top: 25px;
+	width: 80%;
 	height: 0;
 }
 
