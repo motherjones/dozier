@@ -132,11 +132,6 @@ span.dropCap {
 	right: 0em;
 }
 
-#shelves {
-	top: 0;
-	left: 0em;
-}
-
 #abused {
 	top: 0;
 	left: 0em;
@@ -229,6 +224,19 @@ span.dropCap {
 #shell960 .videoWrapper {
 	text-align: center;
 	margin: 0 auto;
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+/* make video fluid */	
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 #shell960 iframe.videoCentered {
@@ -344,8 +352,9 @@ and (max-width: 568px) {
 	}
 
 	.captionSmall {
-		text-align:	left;
-		line-height: 1;
+		float: left;
+		text-align: left;
+		max-width: 568px;
 	}
 	
 	#shell960 img.splitScreen {
