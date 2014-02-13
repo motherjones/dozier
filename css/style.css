@@ -93,6 +93,10 @@ span.dropCap {
 	margin-right: 2px;
 }
 
+.hairline {
+	border-top: 1px solid #cccccc;
+}
+
 /* .lead.drop-cap:first-letter {
   margin: 0 12px -10px 1;
   font-size: 550%;
@@ -122,60 +126,75 @@ span.dropCap {
 
 .overlayQuote, .floatQuote {
 	font-style: italic;
-	font-size: 1.4em;
-	padding: 1em;
 	max-width: 530px;
 	width: 100%;
-	line-height: 1.5em;
+	line-height: 1.3em;
 }
 
 .overlayQuote {
 	position: absolute;
+	font-size: 1.4em;
 }
 
 .floatQuote {
+	font-size: 2.4em;
 	position: relative;
 	color:#101010;
 	text-align: center;
 	margin:0 auto;
-
+	padding-bottom: 1em;
 }
 
 .flashAudio {
-	width: 50%;
+	width: 30%;
 	margin: 0 auto 0 auto !important;
 }
 
 #marianna {
 	bottom: 0;
 	left: 0em;
-	max-width: 350px;
+	max-width: 250px;
 	background: rgba(0, 0, 0, 0.2);
 	color: #ffffff;
+	padding: 1em;
+}
+
+#marianna p {
+	margin: 0;
 }
 
 #spell {
-	max-width: 440px;
+	max-width: 820px;
 }
 
 #abused {
 	top: 0;
-	left: 8em;
+	left: 2em;
 	text-align: center;
-	max-width: 550px;
+	max-width: 820px;
+	font-size: 2em;
+}
+
+#abused p {
+	margin-bottom: .5em;
 }
 
 #belt {
 	bottom: 0;
 	right: 0em;
-	max-width: 620px;
+	max-width: 820px;
 }
 
 #johnny {
-	top: 3em;
-	left: 8em;
+	top: 2em;
+	left: 6em;
 	text-align: center;
-	max-width: 550px;
+	max-width: 530px;
+	font-size: 2em;
+}
+
+#spell p, #abused p, #belt p {
+	margin-bottom: .5em;
 }
 
 /* start background image and pull quote styles */
@@ -209,6 +228,10 @@ span.dropCap {
 	position: relative;
 	width: 100%;
 	max-width: 140px;
+}
+
+span.desktopOnly {
+	font-size: .6em;
 }
 
 /* end caption styles */
@@ -395,6 +418,36 @@ and (max-width: 568px) {
 		padding: 1em 0 0 0;
 	}
 
+	.backImageFade, .backImageStatic {
+    	opacity: 1 !important;
+	}
+
+	#abused, #johnny {
+		color: #ffffff !important;
+	}
+
+	.overlayQuote {
+		font-size: 1em !important;
+		padding: .5em;
+		max-width: 530px !important;
+		width: 83%;
+	}
+
+	.floatQuote {
+		font-size: 1.3em;
+	}
+
+	#abused {
+		top: -.5em;
+		left: .5em;
+		text-align: left;
+	}
+
+	#johnny {
+		top: 1em;
+		left: 1em;	
+	}
+
 	.overlayText {
 		position: relative;
 		padding: .5em;
@@ -414,10 +467,18 @@ and (max-width: 568px) {
 		margin-bottom: 6em;
 	}
 
+	#shell960 .fullCentered {
+		padding-bottom: 0;
+	}
+
 	#shell960 img.splitScreen {
 		max-width: 220px;
 		width: 100%;
 		padding-bottom: .5em;
+	}
+
+	#shell960 .videoWrapper {
+		padding-bottom: 52%; /* added padding for mobile */
 	}
 
 	#shell960 ul {

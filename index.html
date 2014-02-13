@@ -32,11 +32,11 @@
 
 	        $('.pullQuoteOverlay').each( function(i){
 	            
-	            var bottom_of_object = $(this).offset().top + ($(this).outerHeight()/2);
+	            var middle_of_object = $(this).offset().top + ($(this).outerHeight()/1.5);
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            
 	            /* If the object is completely visible in the window, fade it it */
-	            if( bottom_of_window > bottom_of_object ) {
+	            if( bottom_of_window > middle_of_object ) {
 	                
                     var img = $(this).find('.backImageFade');
                     if (img.length) {
@@ -134,7 +134,7 @@
 			<section class="pullQuoteOverlay">
 				<img class="backImageStatic" alt="" src="http://assets.motherjones.com/interactives/projects/2014/2/Dozier/Nina-Cars.jpg" />
 				<div class="overlayQuote" id="marianna">
-					<p>"You don't look at white people." <span class="desktopOnly">Listen to the audio:</span></p>
+					<p>"You don't look at white people." <span class="desktopOnly"><br />Listen to the audio:</span></p>
 					<object height="18" width="100%"><param name="movie" value="https://player.soundcloud.com/player.swf?url=https%3A//api.soundcloud.com/tracks/132097108%3Fsecret_token%3Ds-KKwLm&amp;color=ff5500&amp;auto_play=false&amp;player_type=tiny"></param><param name="allowscriptaccess" value="always"></param><param name="wmode" value="transparent"></param><embed wmode="transparent" allowscriptaccess="always" height="18" width="100%" src="https://player.soundcloud.com/player.swf?url=https%3A//api.soundcloud.com/tracks/132097108%3Fsecret_token%3Ds-KKwLm&amp;color=ff5500&amp;auto_play=false&amp;player_type=tiny"></embed></object>
 				</div>
 			</section>	
@@ -147,7 +147,7 @@
 					</div>
 				</div>
 			</section>
-			<article class="singleColumnText">
+			<article class="singleColumnText hairline">
 				<p>“Every morning before we went to work or school or wherever, you had to line up, and Mr. Crockett inspected you personally,” Richard Huntly recalls. “Standing there in one of the cottages, I could see him coming down the line: ‘Open your mouth!’ you know? Stand back and look at your shoes—‘Smile!’ And if you missed a point, he would brush your teeth for you, and when he brushed them, you didn’t like it.”</p>
 			</article>
 			<section class="">
@@ -180,7 +180,7 @@
 					<object class="flashAudio" height="18" width="100%"><param name="movie" value="https://player.soundcloud.com/player.swf?url=https%3A//api.soundcloud.com/tracks/133464952%3Fsecret_token%3Ds-M3xBf&amp;color=ff5500&amp;auto_play=false&amp;player_type=tiny"></param><param name="allowscriptaccess" value="always"></param><param name="wmode" value="transparent"></param><embed wmode="transparent" allowscriptaccess="always" height="18" width="100%" src="https://player.soundcloud.com/player.swf?url=https%3A//api.soundcloud.com/tracks/133464952%3Fsecret_token%3Ds-M3xBf&amp;color=ff5500&amp;auto_play=false&amp;player_type=tiny"></embed></object>
 				</div>
 			</section>
-			<article class="singleColumnText">
+			<article class="singleColumnText hairline">
 				<p>Dozier was unforgiving whatever your skin color. But the white kids were given vocational work while the blacks did grunt labor. (The school profited from both.) “It was brutal work,” says Richard Huntly, 67. “We were out there in the cold cutting cane and planting peas and pulling corn. I was admitted to the third grade when I was there, and I spent two years and about four months there, and the day I left I was still in the third grade. So that’s the kind of education I got.”</p>
 			</article>
 			<section class="captionWithAudio">
