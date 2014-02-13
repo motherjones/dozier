@@ -84,6 +84,7 @@ div.node-master-image {display: none;}
 	max-width: 630px;
 	margin: 0 auto;
 	line-height: 2em;
+	padding: 1.2em 0 1.5em 0;
 }
 
 span.dropCap {
@@ -245,7 +246,6 @@ span.desktopOnly {
 	margin: 0 auto;
 	width: 100%;
 	max-width:630px;
-	padding-bottom: 1.4em;
 }
 
 #shell960 img.splitScreen {
@@ -283,6 +283,11 @@ span.desktopOnly {
 	margin-top: -10px;
 	margin-left: -120px;
 }
+
+img#bunk {
+	padding-bottom: 1.4em;
+}
+
 /* end image styles */	
 
 /* start video styles */	
