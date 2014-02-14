@@ -147,8 +147,12 @@ span.dropCap {
 }
 
 .flashAudio {
-	width: 30%;
+	width: 50%;
 	margin: 0 auto 0 auto !important;
+}
+
+.captionSmall .flashAudio {
+	width: 75%;
 }
 
 #marianna {
@@ -440,6 +444,15 @@ and (max-width: 568px) {
 
 	.floatQuote {
 		font-size: 1.3em;
+	}
+
+	.flashAudio {
+	width: 100%;
+	margin: 0 auto 0 auto !important;
+	}
+
+	.flashAudio object {
+		width: 50%;
 	}
 
 	#abused {
