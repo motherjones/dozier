@@ -172,7 +172,7 @@ span.dropCap {
 	top: 1em;
 	left: 4em;
 	text-align: center;
-	max-width: 620px;
+	max-width: 630px;
 	font-size: 2.4em;
 }
 
@@ -190,7 +190,7 @@ span.dropCap {
 	top: 4em;
 	left: 5em;
 	text-align: center;
-	max-width: 620px;
+	max-width: 630px;
 	font-size: 2.2em;
 }
 
@@ -467,10 +467,6 @@ and (max-width: 568px) {
 		max-width: 568px;
 		margin-bottom: 1em;
 	}
-	
-	.captionWithAudio {
-		margin-bottom: 6em;
-	}
 
 	#shell960 .fullCentered {
 		padding-bottom: 0;
@@ -480,6 +476,10 @@ and (max-width: 568px) {
 		max-width: 220px;
 		width: 100%;
 		padding-bottom: .5em;
+	}
+
+	img#bunk {
+		padding-bottom: 0em;
 	}
 
 	#shell960 .videoWrapper {
